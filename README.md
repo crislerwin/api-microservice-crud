@@ -3,7 +3,7 @@
 ## Sobre o Projeto
 
 Esta aplicação utiliza o framework NodeJS MVC(Model,View & Controller) **NestJS**, escrevendo em
-tabelas no banco de dados **PostgreSQL**.
+tabelas no banco de dados **PostgreSQL**, aplicando boas práticas de desenvolvimento utilizando commits semânticos para melhor compreensão do código desenvolvido.
 
 ## Arquitetura
 
