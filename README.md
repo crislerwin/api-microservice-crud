@@ -31,3 +31,5 @@ Necessita ter o Docker e Docker-Compose instalados
 git clone https://github.com/crislerwin/crud-mvc-api.git
 sudo docker-compose up --build
 ```
+
+O PG-Admin está rodando na porta 9000 e a aplicação na porta 3000
