@@ -22,3 +22,12 @@ para o banco de dados, porém irá salvar os dados em HD para não crescer o con
 - Typescript
 - PostgreSQL
 - Docker
+
+## Execução
+
+Necessita ter o Docker e Docker-Compose instalados
+
+```
+git clone https://github.com/crislerwin/crud-mvc-api.git
+sudo docker-compose up --build
+```
