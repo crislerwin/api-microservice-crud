@@ -12,7 +12,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { User } from 'src/models/user.model';
 import { Repository } from 'typeorm';
 
-@Controller('users')
+@Controller('user')
 export class UserController {
   constructor(
     @InjectRepository(User)
