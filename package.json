@@ -78,7 +78,10 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "./src/**/*.{ts,js}": [
+      "npm run lint --fix",
+      "npm run format"
+    ]
   },
   "config": {
     "commitizen": {
