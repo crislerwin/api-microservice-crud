@@ -18,7 +18,7 @@ import { User } from './models/user.model';
     }),
     TypeOrmModule.forFeature([User]),
   ],
-  controllers: [AppController, User],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
