@@ -22,6 +22,9 @@ para o banco de dados, porém irá salvar os dados em HD para não crescer o con
 Utilizo em meus projetos o commitlint instalado globalmente para reforçar os padrões de commits
 para que crie a documentação do software em todas as etapas do desenvolvimento, neste projeto está configurado em commitlint.config.js a importação do módulo que foi instalado globalmente. Também estou utilizando o lint-staged e o husky para reforçar os commits por ordem de alteração, e irei configura-lo para rodar testes antes de autorizar os commits.
 Adicionei o commitzen que é uma ferramenta incrível para escrever os commits da maneira correta.
+<img src=".github/commit.jpg">
+<img src=".github/commit1.jpg">
+<img src=".github/commit2.jpg">
 
 ## Tecnologias
 
