@@ -1,4 +1,9 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 
 @Entity({ name: "register" })
 export class Register {
@@ -33,17 +38,19 @@ export class Register {
   @Column()
   billing_zip_code: string;
   @Column()
+  primary_billing_adress: string;
+  @Column()
+  secondary_billing_adress: string;
+  @Column()
   fcut_device: boolean;
   @Column()
   other_installed_trackers: boolean;
   @Column()
   identify_fleet_drivers: boolean;
   @Column()
-  tracker_quantity: number;
-  @Column()
   same_shipping_address: boolean;
   @Column()
-  primary_billing_adress: string;
-  @Column()
-  secondary_billing_adress: string;
+  tracker_quantity: number;
+  @CreateDateColumn({ type: "timestamp" })
+  created_at: Date;
 }
