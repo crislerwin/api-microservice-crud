@@ -7,7 +7,8 @@ import { User } from './models/user.model';
 import { Product } from './models/product.model';
 import { UserController } from './controllers/user/user.controller';
 import { ProductController } from './controllers/product/product.controller';
-
+import {Register} from './models/register.model';
+import { RegisterController } from './controllers/register/register.controller';
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -18,11 +19,11 @@ import { ProductController } from './controllers/product/product.controller';
       username: process.env.TYPEORM_USERNAME,
       password: process.env.TYPEORM_PASSWORD,
       database: process.env.TYPEORM_DATABASE,
-      entities: [User, Product],
+      entities: [User, Product, Register],
     }),
-    TypeOrmModule.forFeature([User, Product]),
+    TypeOrmModule.forFeature([User, Product, Register]),
   ],
-  controllers: [AppController, UserController, ProductController],
+  controllers: [AppController, UserController, ProductController, RegisterController],
   providers: [AppService],
 })
 export class AppModule {}

@@ -74,33 +74,32 @@ export class CreateRegisterTable1632444702081 implements MigrationInterface {
             type: "varchar",
           },
           {
-            name: "secondary_billing_adress",
+            name: "second_billing_adress",
             type: "varchar",
           },
           {
             name: "fcut_device",
-            type: "boolean",
+            type: "bool",
           },
           {
             name: "other_installed_trackers",
-            type: "boolean",
+            type: "bool",
           },
           {
             name: "identify_fleet_drivers",
-            type: "boolean",
+            type: "bool",
           },
           {
             name: "same_shipping_adress",
-            type: "boolean",
+            type: "bool",
           },
           {
             name: "tracker_quantity",
-            type: "boolean",
+            type: "int",
           },
           {
             name: "created_at",
             type: "timestamp",
-
             default: "CURRENT_TIMESTAMP",
           },
         ],

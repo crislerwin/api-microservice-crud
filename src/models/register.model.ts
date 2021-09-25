@@ -40,7 +40,7 @@ export class Register {
   @Column()
   primary_billing_adress: string;
   @Column()
-  secondary_billing_adress: string;
+  second_billing_adress: string;
   @Column()
   fcut_device: boolean;
   @Column()
@@ -48,7 +48,7 @@ export class Register {
   @Column()
   identify_fleet_drivers: boolean;
   @Column()
-  same_shipping_address: boolean;
+  same_shipping_adress: boolean;
   @Column()
   tracker_quantity: number;
   @CreateDateColumn({ type: "timestamp" })
